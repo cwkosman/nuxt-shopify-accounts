@@ -21,7 +21,7 @@
     "@nuxtjs/dotenv": "^1.4.1",
     "@nuxtjs/pwa": "^3.3.5",
     "axios": "^0.21.1",
-    "cookie-universal-nuxt": "^2.1.4",
+    "cookie-universal-nuxt": "^2.1.5",
     "dotenv": "^8.0.0",
     "es-cookie": "^1.2.0",
     "fs-extra": "^9.0.1",

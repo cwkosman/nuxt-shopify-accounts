@@ -51,7 +51,7 @@ export default {
   buildModules: ['@nuxtjs/eslint-module', 'nuxt-purgecss', '@nuxtjs/dotenv'],
 
   // Modules: https://go.nuxtjs.dev/config-modules
-  modules: ['@nuxtjs/pwa', '~/modules/nacelle'],
+  modules: ['@nuxtjs/pwa', '~/modules/nacelle', 'cookie-universal-nuxt'],
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
   plugins: [
