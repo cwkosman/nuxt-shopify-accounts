@@ -21,7 +21,7 @@ exports.SHOPIFY_STOREFRONT_ACCESS_TOKEN =
   process.env.SHOPIFY_STOREFRONT_ACCESS_TOKEN
 
 // Netlify Functions specific
-exports.ENDPOINT = ENVIRONMENT === 'dev' ? '/.netlify/functions' : '/api'
+exports.ENDPOINT = process.env.SERVERLESS_ENDPOINT
 
 const NACELLE_PASSPORT_SECRET = process.env.NACELLE_PASSPORT_SECRET
 const FACEBOOK_APP_ID = process.env.FACEBOOK_APP_ID

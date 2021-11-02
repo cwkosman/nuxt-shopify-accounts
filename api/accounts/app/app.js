@@ -17,8 +17,7 @@ class App {
 
   config() {
     // Set router base path for local dev
-    const routerBasePath =
-      process.env.SERVERLESS_ENDPOINT
+    const routerBasePath = process.env.SERVERLESS_ENDPOINT
     this.app.use(bodyParser.urlencoded({ extended: true }))
     this.app.use(bodyParser.json())
     this.app.use(cookieParser())
