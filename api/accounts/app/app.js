@@ -18,7 +18,7 @@ class App {
   config() {
     // Set router base path for local dev
     const routerBasePath =
-      process.env.NODE_ENV === 'dev' ? `/.netlify/functions/` : `/api`
+      process.env.SERVERLESS_ENDPOINT
     this.app.use(bodyParser.urlencoded({ extended: true }))
     this.app.use(bodyParser.json())
     this.app.use(cookieParser())
