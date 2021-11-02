@@ -22,8 +22,7 @@ export default {
     }
   },
   created() {
-    this.endpoint =
-      process.env.NODE_ENV === `development` ? `/.netlify/functions` : `/api`
+    this.endpoint = process.env.SERVERLESS_ENDPOINT
   },
   async mounted() {
     this.facebook.url = this.authUrl('facebook')
