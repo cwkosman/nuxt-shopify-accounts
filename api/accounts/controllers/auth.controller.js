@@ -55,13 +55,12 @@ const exchangeMultipassForAccessToken = async (multipassToken) => {
   const response = await accountClient({ query, variables }).catch((err) => {
     throw new Error(err)
   })
-  const { data, errors } = response && response.data
+  const { data, errors } = response
   if (errors && errors.length) {
     throw new Error(JSON.stringify(errors))
   }
   const { customerAccessToken, customerUserErrors } =
-    data && data.customerAccessTokenCreateWithMultipass
-
+    data.customerAccessTokenCreateWithMultipass
   if (customerAccessToken) {
     return customerAccessToken
   } else {
