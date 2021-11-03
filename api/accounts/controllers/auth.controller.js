@@ -96,9 +96,10 @@ const handleCallback = async (req, res) => {
       throw new TypeError('Invalid returnTo url')
     }
   } catch (error) {
+    console.log(error)
     res.status(500).json({
       status: 'error',
-      message: JSON.stringify(error.message, null, 4)
+      ...error
     })
   }
 }
@@ -117,7 +118,7 @@ const getStatus = (req, res) => {
   } catch (error) {
     res.status(500).json({
       status: 'error',
-      message: JSON.Stringify(error.message, null, 4)
+      ...error
     })
   }
 }
