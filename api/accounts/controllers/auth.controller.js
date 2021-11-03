@@ -117,7 +117,7 @@ const getStatus = (req, res) => {
   } catch (error) {
     res.status(500).json({
       status: 'error',
-      message: error.message
+      message: JSON.Stringify(error.message, null, 4)
     })
   }
 }
