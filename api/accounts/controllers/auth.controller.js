@@ -64,7 +64,7 @@ const exchangeMultipassForAccessToken = async (multipassToken) => {
   if (customerAccessToken) {
     return customerAccessToken
   } else {
-    throw new Error(customerUserErrors)
+    throw new Error(JSON.stringigy(customerUserErrors))
   }
 }
 
