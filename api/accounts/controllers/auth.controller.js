@@ -98,7 +98,7 @@ const handleCallback = async (req, res) => {
   } catch (error) {
     console.log(error)
     res.status(500).json({
-      status: 'error',
+      status: 'Error on handleCallback',
       ...error
     })
   }
@@ -117,7 +117,7 @@ const getStatus = (req, res) => {
     res.json(req.user)
   } catch (error) {
     res.status(500).json({
-      status: 'error',
+      status: 'Error on getStatus',
       ...error
     })
   }
